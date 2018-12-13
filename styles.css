@@ -1,0 +1,55 @@
+body {
+  margin: 0;
+  background-color: #2d2d2d;
+}
+
+.wrapper {
+  display: flex;
+}
+
+.side-static {
+  width: 300px;
+  height: 100vh;
+  margin: 0;
+  background-color: white;
+}
+
+.card {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 50px;
+  height: 100vh;
+  -webkit-transition: all 0.4s ease-in-out;
+}
+
+#card1 {
+  background-color: #848484;
+}
+
+#card2 {
+  background-color: #9e9e9e;
+}
+
+.card-large {
+  width: 50vw;
+  -webkit-transition: all 0.4s ease-in-out;
+}
+
+.text {
+  margin: 8px;
+  color: black;
+  font-family: sans-serif;
+  writing-mode: tb-rl;
+}
+
+.Hide
+{
+  display:none;
+}
+ a {
+  text-decoration: none;
+ }
+
+
+

@@ -1,0 +1,45 @@
+<html>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="sidemenu.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- Logo Static Card !-->
+      <div class="side-static">
+        
+      </div>
+
+      <!-- Projects Card !-->
+      <a href="#" onclick="toggle_visibility('projects');">
+        <div class="card" id="card1" onclick="cardOneClick()">     
+          <div class="text">
+            <h2>Projects</h2>
+          </div>
+          <div id="projects" class="hide">
+            <h1> Project One </h1>
+            <p>words words words</p>
+          </div>
+        </div>
+      </a>
+
+      <!-- Contact Card !--> 
+      <a href="#" onclick="toggle_visibility('contact');">
+        <div class="card" id="card2" onclick="cardTwoClick()">
+          <div class="text">
+            <h2>Contact</h2>
+          </div>
+          <div id="contact" class="hide">
+            <h1> call me </h1>
+            <p>words words words</p>
+          </div>
+        </div>
+      </a>
+
+     
+
+    </div>
+  </body>
+
+</html>
