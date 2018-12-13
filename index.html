@@ -8,36 +8,29 @@
     <div class="wrapper">
       <!-- Logo Static Card !-->
       <div class="side-static">
-        
       </div>
 
       <!-- Projects Card !-->
-      <a href="#" onclick="toggle_visibility('projects');">
-        <div class="card" id="card1" onclick="cardOneClick()">     
-          <div class="text">
-            <h2>Projects</h2>
-          </div>
-          <div id="projects" class="hide">
-            <h1> Project One </h1>
-            <p>words words words</p>
-          </div>
+      <div class="card" id="card-projects" onclick="cardClick('card-projects', 'card-contact')">
+        <div class="card-content hide-card">
+          <h1>project one </h1>
+          <p>words words words</p>
         </div>
-      </a>
-
-      <!-- Contact Card !--> 
-      <a href="#" onclick="toggle_visibility('contact');">
-        <div class="card" id="card2" onclick="cardTwoClick()">
-          <div class="text">
-            <h2>Contact</h2>
-          </div>
-          <div id="contact" class="hide">
-            <h1> call me </h1>
-            <p>words words words</p>
-          </div>
+        <div class="text">
+          <h2>Projects</h2>
         </div>
-      </a>
+      </div>
 
-     
+      <!-- Contact Card !-->
+      <div class="card" id="card-contact" onclick="cardClick('card-contact', 'card-projects')">
+        <div class="card-content hide-card">
+          <h1> call me </h1>
+          <p>words words words</p>
+        </div>
+        <div class="text">
+          <h2>Contact</h2>
+        </div>
+      </div>
 
     </div>
   </body>
