@@ -1,11 +1,13 @@
 <html>
   <link rel="stylesheet" type="text/css" href="styles.css">
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="sidemenu.js"></script>
   </head>
   <body>
     <div class="wrapper">
+
       <!-- Logo Static Card !-->
       <div class="side-static">
       </div>
@@ -32,7 +34,43 @@
         </div>
       </div>
 
+    <div class="images"> 
+      <div class="photo"> 
+        <img src="images/photo.png" alt="engineer photo">
+      </div>
     </div>
-  </body>
+
+  <span id="circle-white"></span>
+
+  <!-- This div  wrap all other elements with blend-mode multiply apply -->
+  <div class="blend-multiply full-size">  
+
+    <!-- This div handle the background element (could be an image, a video or in that case a gif) -->
+    <div class="animated-bg full-size">
+      <div class="images"> 
+        <div class="plan"> 
+          <img src="images/plan.bmp" alt="engineer photo">
+        </div>
+      </div>
+    </div>
+
+        <!-- This div wrap the masked element with blend-mode screen apply and background-color set as #ffffff = white background -->
+    <div class="blend-screen element-mask full-size">
+
+      
+      <!-- This span display the masked element-->
+      <span id="circle" class="circle-follow"></span>
+    </div>
+  </div>
+
+  </div>
+</body>
 
 </html>
+
+
+
+
+ 
+
+
