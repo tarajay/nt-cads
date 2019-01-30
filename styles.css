@@ -76,72 +76,43 @@ body {
   -webkit-transition: all 1s ease-in-out;
 }
 
-.images {
-  z-index: 0;
+.full-size-absolute {
   position: absolute;
-  /*margin-left: -100px;*/
+  height : 100vh;
+  width : 100%;
 }
 
-.white-image {
-  opacity: 0;
+.background-wrapper > img, .background-wrapper > * > img {
+  width: 100vw;
 }
 
-.photo {
-  position: absolute;
-  z-index: 1;
-}
-
-.plan {
-  position: absolute;
-  z-index: 1;
-}
-
-/* Hover */
-.full-size { 
-  height : 100vh; 
-  width : 100%; 
-  position: absolute; 
-  top : 0; 
-  left : 0;
-}
 .blend-multiply {
   mix-blend-mode : multiply;
+  top: 0;
+  left: 0;
 }
+
 .blend-screen {
-  mix-blend-mode : screen;
-}
-
-.animated-bg {
-  
-
-}
-.element-mask {
+  mix-blend-mode: screen;
   background-color: #ffffff;
-  }
+}
+
+.circle {
+  position :absolute;
+  width :300px;
+  height: 300px;
+  border-radius: 150px;
+}
 
 .circle-follow {
-    position :absolute;
-    overflow : hidden;
-    background-color: #000000;
-    width :300px; 
-    height: 300px;
-    top:calc( 50% - 150px); 
-    left:calc( 50% - 150px); 
-    -webkit-border-radius: 150px; 
-    border-radius: 150px;  
-    -webkit-transition: opacity 0.3s cubic-bezier(0.52, 0.01, 0.16, 1);  
-    transition: opacity 0.3s cubic-bezier(0.52, 0.01, 0.16, 1);  
-    opacity : 0; 
-    box-shadow: 0 0 10px 20px #555;
-  }
-
-.circle-follow::before  {
-    content : ' ';  
-    height : 100%; 
-    width : 100%; 
-    position: absolute; 
-    top : 0; 
-    left : 0; 
+  overflow : hidden;
+  background-color: #000000;
+  top:calc( 50% - 150px); 
+  left:calc( 50% - 150px); 
+  -webkit-transition: opacity 0.3s cubic-bezier(0.52, 0.01, 0.16, 1);  
+  transition: opacity 0.3s cubic-bezier(0.52, 0.01, 0.16, 1);  
+  opacity : 0; 
+  box-shadow: 0 0 10px 20px #555;
 }
 
 .circle-follow.moving {
@@ -149,23 +120,14 @@ body {
 }
 
 #circle-white {
-  position :absolute;
-  width: 300px;
-  height: 300px;
-  background-color: #cccccc;
+  background-color: #ffffffbb;
   filter: blur(20px);
-  border-radius: 150px;
 }
 
 /* hack to detect ie11 and above - blend mode not supported */
 _:-ms-fullscreen, :root .letter-mask {background-color: transparent; }
 _:-ms-fullscreen, :root .animated-bg {opacity: 0.2;}
 _:-ms-fullscreen, :root .circle-follow {background-color:#ffffff; opacity: 0.2; }
-
-
-img {
-  width: 100vw;
-}
 
 @media only screen and (max-width: 600px) {
 
