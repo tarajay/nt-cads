@@ -2,41 +2,37 @@ body {
   margin: 0;
   cursor: crosshair;
   overflow: hidden;
+  font-family: 'Didact Gothic', sans-serif;
 }
 
-.wrapper {
+header {
   display: flex;
+  height: 100vh;
 }
 
 .side-static {
-  width: 300px;
-  height: 100vh;
-  margin: 0;
-  background-color: white;
-  z-index: 5;
   position: relative;
+  width: 300px;
+  background-color: white;
 }
 
 .card {
   display: flex;
+  position: relative;
   justify-content: flex-end;
   align-items: center;
   width: 50px;
-  height: 100vh;
   -webkit-transition: all 0.4s ease-in-out;
   overflow: hidden;
+  color: #4b4b4b;
 }
 
 #card-projects {
   background: rgba(255, 255, 255, 0.8);
-  z-index: 4;
-  position: relative;
 }
 
 #card-contact {
   background: rgba(255, 255, 255, 0.7);
-  z-index: 3;
-  position: relative;
 }
 
 .card-large {
@@ -47,23 +43,21 @@ body {
 .text {
   margin: 8px;
   color: black;
-  font-family: sans-serif;
   writing-mode: tb-rl;
 }
 
 .card > .text > h2 {
   margin: 0;
 }
+
 .card-content {
   display: flex;
   align-items: center;
   flex-direction: column;
   width: 90%;
-  height: 90%;
   white-space: nowrap;
   justify-content: center;
   overflow: hidden;
-  /* -webkit-transition: all 0.6s ease-in-out; */
 }
 
 .hide-card {
@@ -131,32 +125,26 @@ _:-ms-fullscreen, :root .circle-follow {background-color:#ffffff; opacity: 0.2; 
 
 @media only screen and (max-width: 991px) {
 
-  /*Flip Side bar to top*/
-
-  .side-static {
-    width: 100vw;
-    height: 200px;
-    position: relative;  
-  }
-
-  .card {
-    position: relative;
-    width: 100vw;
+  header {
     height: 100px;
   }
 
-  #card-projects {
-    z-index: 4;
-    position: relative; 
+  .side-static {
+    flex: 1;
   }
 
-  #card-contact {
-    z-index: 3;
-    position: relative;
+  .card {
+    flex: 2;
+    justify-content: center;
   }
 
   .card-large {
     height: 80vh;
+  }
+
+  /* adjust the content for mobiles later */
+  .card-content {
+    display: none;
   }
 
   .text {

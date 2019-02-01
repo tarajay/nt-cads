@@ -1,30 +1,31 @@
 <html>
   <link rel="stylesheet" type="text/css" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="sidemenu.js"></script>
   </head>
   <body>
-    <div class="wrapper">
 
-      <div class="background-wrapper full-size-absolute">
-        <img src="images/photo.png" alt="engineer photo">
+    <!-- BACKGROUND IMAGES -->
+    <div class="background-wrapper full-size-absolute">
+      <img src="images/photo.png" alt="engineer photo">
 
-        <span id="circle-white" class="circle"></span>
+      <span id="circle-white" class="circle"></span>
 
-        <div class="blend-multiply full-size-absolute">
-          <div class="blend-screen full-size-absolute">
-            <span id="circle" class="circle circle-follow"></span>
-          </div>
-
-          <img src="images/plan.bmp" alt="engineer photo">
+      <div class="blend-multiply full-size-absolute">
+        <div class="blend-screen full-size-absolute">
+          <span id="circle" class="circle circle-follow"></span>
         </div>
-      </div>
 
-      <!-- Logo Static Card !-->
-      <div class="side-static">
+        <img src="images/plan.bmp" alt="engineer photo">
       </div>
+    </div>
+
+    <header>
+      <!-- Logo Static Card !-->
+      <div class="side-static"></div>
 
       <!-- Projects Card !-->
       <div class="card" id="card-projects" onclick="cardClick('card-projects', 'card-contact')">
@@ -47,6 +48,6 @@
           <h2>Contact</h2>
         </div>
       </div>
-    </div>
+    </header>
   </body>
 </html>
