@@ -127,15 +127,18 @@ _:-ms-fullscreen, :root .circle-follow {background-color:#ffffff; opacity: 0.2; 
 
   header {
     height: 100px;
+    flex-direction: column;
   }
 
   .side-static {
     flex: 1;
+    width: initial;
   }
 
   .card {
-    flex: 2;
+    flex: 1;
     justify-content: center;
+    width: initial;
   }
 
   .card-large {
