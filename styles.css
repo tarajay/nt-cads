@@ -202,6 +202,10 @@ img {
     text-align: center;
   }
 
+  .wrapper {
+  display: block;
+}
+
   /*Push visible BG image section to left*/
     /*.images {
       z-index: 0;
