@@ -123,53 +123,51 @@ _:-ms-fullscreen, :root .letter-mask {background-color: transparent; }
 _:-ms-fullscreen, :root .animated-bg {opacity: 0.2;}
 _:-ms-fullscreen, :root .circle-follow {background-color:#ffffff; opacity: 0.2; }
 
+
+
+
 @media only screen and (max-width: 991px) {
 
-  header {
-    height: 100px;
-    flex-direction: column;
-  }
-
   .side-static {
-    flex: 1;
-    width: initial;
+    display: flex;
+    position: fixed;
+    top:0px;
+    left: 0px;
+    height: 20vh;
+    width: 100vw;
+    background-color:grey;
+  }
+  .card {
+    margin-top: 20vh;
+    position: relative;
+    flex-direction: row; 
+    height: 80vh;
+    width: 60px;
+    align-items: initial;
   }
 
-  .card {
-    flex: 1;
-    justify-content: center;
-    width: initial;
+  .text > h2 {
+    font-size: 16px
+  }
+  .card-content {
+    align-items: center;
+    justify-content: left;
+  }
+
+  h1 {
+    font-size: 30px;
   }
 
   .card-large {
-    height: 80vh;
+    width: 70vw;
   }
 
-  /* adjust the content for mobiles later */
-  .card-content {
-    display: none;
-  }
-
-  .text {
-    writing-mode: horizontal-tb;
-    text-align: center;
-  }
-
-
-.wrapper {
-  display: block;
-}
-
-  /*Push visible BG image section to left*/
-    /*.images {
-      z-index: 0;
-      position: absolute;
-      margin-left: -200%;
-      margin-top: -20%;
-  }*/
-
-  /* Hide Circle */
   .circle {
     display: none;
+  } 
+
+  .background-wrapper > img, .background-wrapper > * > img {
+    display: none;
   }
+
 }

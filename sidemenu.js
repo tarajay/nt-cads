@@ -37,8 +37,6 @@ function toggle_card_content_visibility(cardShow, cardHide) {
   }
 }
 
-
-
 jQuery(document).ready(function($) {
 
   var timer;
@@ -59,4 +57,5 @@ jQuery(document).ready(function($) {
     circle.css({left: xp +'px', top: yp +'px'});
     circleWhite.css({left: xp +'px', top: yp +'px'});
   }, 30);
+  
 });
