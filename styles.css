@@ -28,11 +28,11 @@ header {
 }
 
 #card-projects {
-  background: rgba(255, 255, 255, 0.8);
+  background: aliceblue; /* rgba(255, 255, 255, 0.8); */
 }
 
 #card-contact {
-  background: rgba(255, 255, 255, 0.7);
+  background: antiquewhite;/* rgba(255, 255, 255, 0.7); */
 }
 
 .card-large {
@@ -126,17 +126,16 @@ _:-ms-fullscreen, :root .circle-follow {background-color:#ffffff; opacity: 0.2; 
 @media only screen and (max-width: 991px) {
 
   header {
-    height: 100px;
     flex-direction: column;
   }
 
   .side-static {
-    flex: 1;
+    height: 100px;
     width: initial;
   }
 
   .card {
-    flex: 1;
+    height: 50px;
     justify-content: center;
     width: initial;
   }
